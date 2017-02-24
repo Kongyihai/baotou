@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<link href="style/style.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="bootstrap/css/myBootstrap1.css">
+	<title>登录验证 - 包头市公安大情报平台</title>
+</head>
+<body>
+	<!-----start-main---->
+	<div class="myMain">
+
+		<div class="login-form">
+			<h1>包头市公安大情报平台</h1>
+			<h3>- 权限认证 -</h3>
+			<div class="head">
+				<img src="images/user.png" alt="" />
+			</div>
+			<form name="form1" method="post" action="login" onsubmit="return validateForm()">
+				<input type="text" name="username" class="text" value="点此输入用户名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '点此输入用户名';}" onchange="validateForm()">
+				<input type="password" name="password" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" onchange="validateForm()">
+				<p id="valiMessage" style="color:red"></p>
+				<br>
+				<div class="submit">
+					<input type="submit" onclick="myFunction()" value="认  证">
+				</div>
+				<!-- p>
+					<a href="javascript:void(0)"><span class="glyphicon glyphicon-pencil"></span>&nbsp;若首次访问，请点此登记您的信息</a>
+				</p -->
+				<hr>
+				<p>
+					<a href="javascript:void(0)"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;忘记密码</a>
+				</p>
+			</form>
+		</div>
+		<!--//End-login-form-->
+		<!-- start-copyright>
+		<div class="copy-right">
+			<p>
+				Copyright &copy; <a target="_blank" href="#"></a>
+			</p>
+		</div>
+		
+	</div>
+	< //end-copyright -->
+	<!-----//end-main---->
+	<script src="script/jquery-3.1.0.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="script/myJs/validate.js"></script>
+	
+</body>
+</html>

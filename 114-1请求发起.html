@@ -1,0 +1,826 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="style/plugins/font-awesome.min.css">
+	<link rel="stylesheet" href="style/plugins/ionicons.min.css">
+	<link rel="stylesheet" href="style/plugins/AdminLTE.css">
+	<link rel="stylesheet" href="style/plugins/skins/_all-skins.min.css">
+	<link rel="stylesheet" href="style/plugins/iCheck/flat/blue.css">
+	<link rel="stylesheet" href="style/plugins/skins/_all-skins.min.css">
+	<link rel="stylesheet" href="style/plugins/morris/morris.css">
+	<!--link rel="stylesheet" href="style/plugins/jvectormap/jquery-jvectormap-1.2.2.css"-->
+	<link rel="stylesheet" href="style/plugins/datepicker/datepicker3.css">
+	<link rel="stylesheet" href="style/plugins/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" href="style/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <link rel="stylesheet" href="style/global.css">
+  <title>请求发起</title>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="###" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>DQB</b></span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>包头大情报平台</b></span>
+      </a>
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <!-- Messages: style can be found in dropdown.less-->
+            <li class="dropdown messages-menu">
+              <button type="button" class="btn btn-success midcenter-top-btn" data-toggle="modal"
+              data-target="#myModal">发起</button>
+            </li>
+            <li class="dropdown messages-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-envelope-o"></i>
+                <span class="label label-success">4</span>
+              </a>
+              <ul class="dropdown-menu">  
+                <li class="header"> 4 条未读信息</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li><!-- start message -->
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="images/ALTEimg/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                          小蓓科技
+                          <small><i class="fa fa-clock-o"></i> 5 分钟前</small>
+                        </h4>
+                        <p>这是一个DEMO</p>
+                      </a>
+                    </li>
+                    <!-- end message -->
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="images/ALTEimg/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                          省公安厅
+                          <small><i class="fa fa-clock-o"></i> 2 小时前</small>
+                        </h4>
+                        <p>大概就是这样</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="images/ALTEimg/user4-128x128.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                          市公安局
+                          <small><i class="fa fa-clock-o"></i> 今天</small>
+                        </h4>
+                        <p>试试试试</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="images/ALTEimg/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                          小蓓科技
+                          <small><i class="fa fa-clock-o"></i> 昨天</small>
+                        </h4>
+                        <p>这是个DEMO</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer"><a href="#">查看所有信息</a></li>
+              </ul>
+            </li>
+            <!-- Notifications: style can be found in dropdown.less -->
+            <li class="dropdown notifications-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-bell-o"></i>
+                <span class="label label-warning">10</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header"> 10 个未读提醒</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-users text-aqua"></i> 新增 5 位新用户
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-warning text-yellow"></i> 请及时修改您的登录密码
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-users text-red"></i> 新增 5 位管理员
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-user text-red"></i> 异地登陆警告
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer"><a href="#">查看所有提醒</a></li>
+              </ul>
+            </li>
+            <!-- Tasks: style can be found in dropdown.less -->
+            <li class="dropdown tasks-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-flag-o"></i>
+                <span class="label label-danger">9</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header"> 9 项未处理任务</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li><!-- Task item -->
+                      <a href="#">
+                        <h3>
+                          合成研判请求A
+                          <small class="pull-right"> 今天</small>
+                        </h3>
+                        <div class="progress xs">
+                          <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <span class="sr-only">20% Complete</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- end task item -->
+                    <li><!-- Task item -->
+                      <a href="#">
+                        <h3>
+                          合成研判请求B
+                          <small class="pull-right"> 昨天</small>
+                        </h3>
+                        <div class="progress xs">
+                          <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <span class="sr-only">40% Complete</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- end task item -->
+                    <li><!-- Task item -->
+                      <a href="#">
+                        <h3>
+                          合成研判请求C
+                          <small class="pull-right"> 2 天前</small>
+                        </h3>
+                        <div class="progress xs">
+                          <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <span class="sr-only">60% Complete</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- end task item -->
+                    <li><!-- Task item -->
+                      <a href="#">
+                        <h3>
+                         合成研判请求C
+                         <small class="pull-right"> 3 天前</small>
+                       </h3>
+                       <div class="progress xs">
+                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">80% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                </ul>
+              </li>
+              <li class="footer">
+                <a href="#">查看所有任务</a>
+              </li>
+            </ul>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="images/ALTEimg/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">小蓓测试用户A</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="images/ALTEimg/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  所在部门 - 职位
+                  <small>拥有最高权限</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">权限设置</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">暂停任务</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">平台设置</a>
+                  </div>
+                </div>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">修改密码</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">退出登录</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <!-- a href="#">右上角保留按钮</a -->
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="images/ALTEimg/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>小蓓科技 测试用户A</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
+        </div>
+      </div>
+      <!-- search form -->
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="功能搜索...">
+          <span class="input-group-btn">
+            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+            </button>
+          </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="header">功能导航</li>
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>114平台</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="###"><i class="fa fa-circle-o"></i> 常态合成发起</a></li>
+            <li><a href="###"><i class="fa fa-circle-o"></i> 常态合成处理</a></li>
+            <li><a href="###"><i class="fa fa-circle-o"></i> 常态合成审批</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-files-o"></i>
+            <span>功能大类A</span>
+            <span class="pull-right-container">
+              <span class="label label-primary pull-right">4</span>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> AAA</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> BBB</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> CCC</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> DDD</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-th"></i> <span>功能大类B</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-green">新</small>
+            </span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>功能大类C</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> AAA</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> BBB</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> CCC</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> DDD</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-share"></i> <span>功能大类D</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> AAA</a></li>
+            <li>
+              <a href="#"><i class="fa fa-circle-o"></i> BBB
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i> B1B1B1</a></li>
+                <li>
+                  <a href="#"><i class="fa fa-circle-o"></i> B2B2B2
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li><a href="#"><i class="fa fa-circle-o"></i> B2aB2aB2a</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> B2bB2bB2b</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> CCC</a></li>
+          </ul>
+        </li>
+        <li class="header">当前任务</li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>最高优先</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>普通优先</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>一般任务</span></a></li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        114平台
+        <small>主面板</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 大情报平台</a></li>
+        <li class="active">114平台</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <div class="container box box-solid">
+        <div class="col-md-4 midcenter">
+          <div class="col-md-2">
+            <div class="row">
+              <div class="pull-left image"><img src="images/ALTEimg/user2-160x160.jpg" class="mini-img-circle" alt="User Image"></div>
+            </div>
+          </div>
+          <div class="col-md-10 midcenter-top-btn">
+            <div class="row"><p class="b-container-bp">发起单位：情报中心</p></div>
+            <div class="row"><p class="b-container-bp">发起人：张科  18600000000</p></div>
+            <div class="row"><p class="b-container-cp">发起时间：2016-10-22 12:32:06</p></div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="container-fluid">
+              <div class="col-md-3">申请查询对象信息</div>
+              <div class="col-md-3">申请查询时间段</div>
+              <div class="col-md-2">申请时间</div>
+              <div class="col-md-2">经办人</div>
+              <div class="col-md-2">状态</div>
+            </div>
+            <!-- button type="button" class="btn btn-success">1</button -->
+          </div>
+          <div class="container b-container-right">
+            <div class="row">
+              <table class="table t-b-container">
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>哈哈哈哈哈</td>
+                    <td>01/01/17-12/31/17</td>
+                    <td>2016-10-22</td>
+                    <td>尼古拉斯·赵四儿</td>
+                    <td>
+                      <button type="button" class="btn btn-warning sbtn">待处理</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="dropdown messages-menu myli">
+                <button type="button" class="btn btn-success sbtn sbtnb dropdown-toggle" data-toggle="dropdown" aria-expanded="true">&nbsp;<span class="glyphicon glyphicon-chevron-down"></span>&nbsp;加载更多&nbsp;</button>
+                <div class="dropdown-menu hiddenlist">
+                  <table class="table table-striped t-b-container">
+                    <tbody>
+                      <tr>
+                        <td>2</td>
+                        <td>哈哈哈哈哈</td>
+                        <td>01/01/17-12/31/17</td>
+                        <td>2016-10-22</td>
+                        <td>尼古拉斯·赵四儿</td>
+                        <td>
+                          <button type="button" class="btn btn-warning sbtn">待处理</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>哈哈哈哈哈</td>
+                        <td>01/01/17-12/31/17</td>
+                        <td>2016-10-22</td>
+                        <td>尼古拉斯·赵四儿</td>
+                        <td>
+                          <button type="button" class="btn btn-warning sbtn">待处理</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>哈哈哈哈哈</td>
+                        <td>01/01/17-12/31/17</td>
+                        <td>2016-10-22</td>
+                        <td>尼古拉斯·赵四儿</td>
+                        <td>
+                          <button type="button" class="btn btn-warning sbtn">待处理</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>哈哈哈哈哈</td>
+                        <td>01/01/17-12/31/17</td>
+                        <td>2016-10-22</td>
+                        <td>尼古拉斯·赵四儿</td>
+                        <td>
+                          <button type="button" class="btn btn-warning sbtn">待处理</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>哈哈哈哈哈</td>
+                        <td>01/01/17-12/31/17</td>
+                        <td>2016-10-22</td>
+                        <td>尼古拉斯·赵四儿</td>
+                        <td>
+                          <button type="button" class="btn btn-warning sbtn">待处理</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+
+              
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box box-solid bg-teal-gradient">
+        <div class="box-header">
+          <i class="fa fa-th"></i>
+
+          <h3 class="box-title">常态合成</h3>
+
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-success">评价</button>
+            <button type="button" class="btn bg-teal btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+            </button>
+                          <!--button type="button" class="btn bg-teal btn-sm" data-widget="remove"><i class="fa fa-times"></i>
+                        </button-->
+                      </div>
+                    </div>
+                    <div class="box-body border-radius-none">
+                      <div class="chart" id="line-chart" style="height: 840px;">
+                        <div class="container s-container">
+
+                         <div class="row">   
+                          <h4 s-body-title-p>查询请求内容区</h4>
+                        </div>
+                        <div class="row">
+                         <div class="mycol-1 col-md-2 justify">申请单号<span></span></div>
+                         <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder="6位辖区编号+4位年份+4位序列号"></div>
+                         <div class="mycol-1 col-md-2">&nbsp;</div>
+                         <div class="mycol-1 col-md-4">&nbsp;</div>
+                       </div>
+                       <div class="row">
+                         <div class="mycol-1 col-md-2 justify">申请查询对象<span></span></div>
+                         <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder=""></div>
+                         <div class="mycol-1 col-md-2 justify">申请查询时间段<span></span></div>
+                         <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder=""></div>
+                       </div>
+                       <div class="row">
+                         <div class="mycol-1 col-md-2 justify">简要案情<span></span></div>
+                         <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder=""></div>
+                         <div class="mycol-1 col-md-2">&nbsp;</div>
+                         <div class="mycol-1 col-md-4">&nbsp;</div>
+                       </div>
+                       <div class="row">
+                         <div class="mycol-3 col-md-2 justify">研判内容<span></span></div>
+                         <div class="mycol-3 col-md-10">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-3"><input type="checkbox"> 嫌疑人轨迹信息</div>
+                              <div class="col-md-3"><input type="checkbox"> 出租车GPS信息</div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-3"><input type="checkbox"> 嫌疑车辆轨迹信息</div>
+                              <div class="col-md-3"><input type="checkbox"> 物流寄递信息</div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-3"><input type="checkbox"> 视频监控信息</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                       <div class="mycol-1 col-md-2 justify">经办人<span></span></div>
+                       <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder=""></div>
+                       <div class="mycol-1 col-md-2 justify">经办日期<span></span></div>
+                       <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder=""></div>
+                     </div>
+
+                     <div class="row">
+                      <hr> 
+                      <h4 s-body-title-p>手段合成区</h4>
+                    </div>
+                    <div class="row">
+                     <div class="mycol-1 col-md-1">1</div>
+                     <div class="mycol-1 col-md-5">合成任务一</div>
+                     <div class="mycol-1 col-md-2">技侦合成</div>
+                     <div class="mycol-1 col-md-4">待审核</div>
+                   </div>
+                   <div class="row">
+                     <div class="mycol-1 col-md-1">2</div>
+                     <div class="mycol-1 col-md-5">合成任务二</div>
+                     <div class="mycol-1 col-md-2">网安合成</div>
+                     <div class="mycol-1 col-md-4">审核通过待处理</div>
+                   </div>
+
+                   <div class="row">
+                    <hr> 
+                    <h4 s-body-title-p>综合研判结果区</h4>
+                  </div>
+                  <div class="row">
+                   <div class="mycol-2 col-md-3 justify">研判结果<span></span></div>
+                   <div class="mycol-2 col-md-9">研判结果描述内容</div>
+                 </div>
+                 <div class="row">
+                   <div class="mycol-2 col-md-3 midcenter">　附　　件<br/>
+                    <button type="button" class="btn btn-link">&nbsp; <span class="glyphicon glyphicon-cloud-upload"></span> &nbsp;点此上传 </button>
+                  </div>
+                  <div class="mycol-2 col-md-9">XXXXX附件；</div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  <!-- Add the sidebar's background. This div must be placed
+  immediately after the control sidebar -->
+  <!-- div class="control-sidebar-bg"></div -->
+
+
+</div>
+
+<!-- 发起 modal begin -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog" style="width: 960px">
+  <div class="modal-content" style="width: 960px">
+    <div class="modal-body">
+
+      <div class="container s-container">
+
+        <div class="row">
+          <div class="mycol-1 col-md-2 justify">申请单号<span></span></div>
+         <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder="6位辖区编号+4位年份+4位序列号"></div>
+         <div class="mycol-1 col-md-2 justify">申请日期<span></span></div>
+         <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder=""></div>
+       </div>
+       <div class="row">
+        <div class="mycol-1 col-md-2 justify">申请单位<span></span></div>
+         <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder=""></div>
+         <div class="mycol-1 col-md-2 justify">申请人<span></span></div>
+         <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder=""></div>
+       </div>
+       <div class="row">
+        <div class="mycol-1 col-md-2 justify">警号<span></span></div>
+         <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder=""></div>
+         <div class="mycol-1 col-md-2 justify">联系电话<span></span></div>
+         <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder=""></div>
+       </div>
+       <div class="row">
+        <div class="mycol-1 col-md-2 justify">请求类型<span></span></div>
+         <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder="一般请求/涉案研判请求/手段合成请求"></div>
+         <div class="mycol-1 col-md-2 justify">涉案编号<span></span></div>
+         <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder=""></div>
+       </div>
+       <div class="row">
+        <div class="mycol-1 col-md-2 justify">申请查询对象<span></span></div>
+         <div class="mycol-1 col-md-10"><input type="text" class="form-control" placeholder=""></div>
+       </div>
+       <div class="row">
+        <div class="mycol-1 col-md-2 justify">申请查询时间段<span></span></div>
+         <div class="mycol-1 col-md-10"><input type="text" class="form-control" placeholder=""></div>
+       </div>
+       <div class="row">
+        <div class="mycol-1 col-md-2 justify">简要案情<span></span></div>
+         <div class="mycol-1 col-md-10"><input type="text" class="form-control" placeholder=""></div>
+       </div>
+       <div class="row">
+        <div class="mycol-3 col-md-2 justify">研判内容<span></span></div>
+         <div class="mycol-3 col-md-10">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3"><input type="checkbox"> 嫌疑人轨迹信息</div>
+              <div class="col-md-3"><input type="checkbox"> 出租车GPS信息</div>
+              <div class="col-md-3"><input type="checkbox"> 嫌疑车辆轨迹信息</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3"><input type="checkbox"> 嫌疑车辆轨迹信息</div>
+              <div class="col-md-3"><input type="checkbox"> 物流寄递信息</div>
+              <div class="col-md-3"><input type="checkbox"> 视频监控信息</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="mycol-3 col-md-2 justify">手段合成<span></span></div>
+       <div class="mycol-3 col-md-10">
+        <div class="container">
+          <div class="row">
+           <div class="mycol-4 col-md-1"><input type="checkbox"></div>
+           <div class="mycol-4 col-md-3">合成任务一</div>
+           <div class="mycol-4 col-md-2">技侦合成</div>
+           <div class="mycol-4 col-md-1">待审核</div>
+         </div>
+         <div class="row">
+           <div class="mycol-4 col-md-1"><input type="checkbox"></div>
+           <div class="mycol-4 col-md-3">合成任务二</div>
+           <div class="mycol-4 col-md-2">技侦合成</div>
+           <div class="mycol-4 col-md-1">待审核</div>
+         </div>
+         <div class="row">
+           <div class="pull-right-re">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#erjiModal">增加任务</button>
+            <button type="button" class="btn btn-danger">删除任务</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="mycol-1 col-md-2 justify">经办人<span></span></div>
+   <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder="6位辖区编号+4位年份+4位序列号"></div>
+   <div class="mycol-1 col-md-2 justify">经办日期<span></span></div>
+   <div class="mycol-1 col-md-4"><input type="text" class="form-control" placeholder=""></div>
+ </div>
+</div>
+
+</div>
+<div class="modal-footer midcenter">
+  <button type="button" class="btn btn-default" data-dismiss="modal"
+  aria-hidden="true">关闭
+</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-success"
+onclick="sendNewEmp()" data-dismiss="modal"
+aria-hidden="true">提交</button>
+</div>
+</div>
+<!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->
+</div>
+<!-- faqi modal end -->
+</div>
+
+
+<!-- 二级模块模态框（Modal） -->
+<div class="modal fade" id="erjiModal" tabindex="-1" role="dialog"
+aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" onclick="hideErji()">&times;</button>
+      <h4 class="modal-title" id="myModalLabel">增加任务</h4>
+    </div>
+    <div class="modal-body">
+      <div class="contanier">
+        <div class="row midcenter">
+          <div class="col-md-3">任务名称</div>
+          <div class="col-md-9"><input type="text" class="form-control" placeholder=""></div>
+        </div>
+        <div class="row midcenter">
+          <div class="col-md-3">合成手段</div>
+          <div class="col-md-9">
+            <select name="" id="">
+              <option value="手段合成">手段合成</option>
+              <option value="技术合成">技术合成</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default">清空</button>
+      <button type="button" class="btn btn-primary" onclick="hideErji()" >提交</button>
+    </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+</div>
+<!-- 增加任务 end -->
+
+
+
+
+
+
+<script type="text/javascript" src="script/jquery-3.1.0.js"></script>
+<script src="script/plugins/jquery-ui.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="script/main.js"></script>
+<script>
+$.widget.bridge('uibutton', $.ui.button);
+</script>
+<!-- Morris.js charts -->
+<script src="script/plugins/raphael.js"></script>
+<script src="script/plugins/morris/morris.min.js"></script>
+<!-- Sparkline -->
+<script src="script/plugins/sparkline/jquery.sparkline.min.js"></script>
+<!-- jvectormap -->
+<script src="script/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="script/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="script/plugins//knob/jquery.knob.js"></script>
+<!-- daterangepicker -->
+<script src="script/plugins/moment.js"></script>
+<script src="script/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- datepicker -->
+<script src="script/plugins/datepicker/bootstrap-datepicker.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="script/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<!-- Slimscroll -->
+<script src="script/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="script/plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="script/plugins/app.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="script/plugins/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="script/plugins/demo.js"></script>
+
+<script>
+function hideErji(){
+  $('#erjiModal').modal('hide');
+}
+</script>
+</body>
+</html>
